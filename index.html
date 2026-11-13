@@ -15,6 +15,10 @@
     <meta property="og:description" content="Architecting cross-platform Flutter mobile applications, real-time IoT systems, and high-concurrency fintech solutions.">
     <meta property="og:image" content="./images/me-7.jpeg">
 
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Bootstrap 5 & Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
@@ -34,7 +38,7 @@
     <!-- End of Async Callbell Code -->
 </head>
 <body>
-    <!-- Top Navigation -->
+    <!-- Top Navigation (Mobile Friendly) -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top mb-4" data-bs-theme="dark">
         <div class="container-fluid layout-container">
             <a class="navbar-brand navbar-brand-text" href="./">
@@ -59,37 +63,67 @@
     <!-- Main Container -->
     <div class="layout-container">
         <div class="row gx-lg-5">
-            <!-- Left Column: Sticky Identity / Profile / Hero -->
+            <!-- Left Column: Sticky Identity / Profile / In-Page Section Tracker -->
             <aside class="col-lg-5 hero-sidebar">
-                <div class="status-pill">
-                    <span class="status-dot"></span> Available for engineering roles & collaboration
-                </div>
-
-                <div class="profile-wrapper">
-                    <div class="profile-halo"></div>
-                    <div class="profile-avatar">
-                        <img src="./images/me-7.jpeg" alt="Daniel Mutuku - Software Engineer">
+                <div>
+                    <div class="status-pill">
+                        <span class="status-dot"></span> Available for engineering roles & collaboration
                     </div>
-                </div>
 
-                <h2 class="hero-greeting">Hello <span class="wave">👋</span></h2>
-                <h1 class="hero-name">Daniel Mutuku</h1>
+                    <div class="profile-wrapper">
+                        <div class="profile-halo"></div>
+                        <div class="profile-avatar">
+                            <img src="./images/me-7.jpeg" alt="Daniel Mutuku - Software Engineer">
+                        </div>
+                    </div>
 
-                <div class="hero-role-wrapper">
-                    <span class="role-typing">Mobile Application Architect</span>
-                </div>
+                    <h2 class="hero-greeting">Hello <span class="wave">👋</span></h2>
+                    <h1 class="hero-name">Daniel Mutuku</h1>
 
-                <p class="hero-bio">
-                    Software Engineer with a BSc in Software Engineering, passionate about architecting resilient cross-platform Flutter applications, real-time IoT hardware integrations, and secure fintech workflows.
-                </p>
+                    <div class="hero-role-wrapper">
+                        <span class="role-typing">Mobile Application Architect</span>
+                    </div>
 
-                <div class="hero-actions">
-                    <a href="./files/Daniel-Mutuku-CV.pdf" target="_blank" download="Daniel-Mutuku-CV.pdf" class="btn-primary-custom">
-                        <i class="fa fa-download" aria-hidden="true"></i> Download CV
-                    </a>
-                    <a href="mailto:mutukudaniel79@gmail.com" class="btn-secondary-custom">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i> Let's Talk
-                    </a>
+                    <p class="hero-bio">
+                        Software Engineer with a BSc in Software Engineering, passionate about architecting resilient cross-platform Flutter applications, real-time IoT hardware integrations, and secure fintech workflows.
+                    </p>
+
+                    <!-- Interactive Section Tracker for Desktop -->
+                    <nav class="section-tracker-nav" aria-label="In-page navigation">
+                        <a href="#about" class="tracker-link active">
+                            <span class="tracker-line"></span>
+                            <span class="tracker-label">01 // ABOUT & PHILOSOPHY</span>
+                        </a>
+                        <a href="#expertise" class="tracker-link">
+                            <span class="tracker-line"></span>
+                            <span class="tracker-label">02 // TECHNICAL TOOLKIT</span>
+                        </a>
+                        <a href="#projects" class="tracker-link">
+                            <span class="tracker-line"></span>
+                            <span class="tracker-label">03 // SELECTED WORK</span>
+                        </a>
+                        <a href="#journey" class="tracker-link">
+                            <span class="tracker-line"></span>
+                            <span class="tracker-label">04 // JOURNEY & ACADEMICS</span>
+                        </a>
+                        <a href="#community" class="tracker-link">
+                            <span class="tracker-line"></span>
+                            <span class="tracker-label">05 // COMMUNITY & WRITING</span>
+                        </a>
+                        <a href="#contact" class="tracker-link">
+                            <span class="tracker-line"></span>
+                            <span class="tracker-label">06 // CONTACT</span>
+                        </a>
+                    </nav>
+
+                    <div class="hero-actions">
+                        <a href="./files/Daniel-Mutuku-CV.pdf" target="_blank" download="Daniel-Mutuku-CV.pdf" class="btn-primary-custom">
+                            <i class="fa fa-download" aria-hidden="true"></i> Download CV
+                        </a>
+                        <a href="mailto:mutukudaniel79@gmail.com" class="btn-secondary-custom">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> Let's Talk
+                        </a>
+                    </div>
                 </div>
 
                 <div class="social-strip">
@@ -111,7 +145,7 @@
                 </div>
             </aside>
 
-            <!-- Right Column: Content Feed & Case Studies -->
+            <!-- Right Column: Bento Content Feed & Case Studies -->
             <main class="col-lg-7 content-feed">
                 <!-- Section 1: About Me & Engineering Philosophy -->
                 <section id="about" class="content-card">
@@ -259,12 +293,20 @@
                             <i class="fa fa-folder-open-o" aria-hidden="true"></i> Selected Work & Case Studies
                         </h2>
                     </div>
-                    <p class="text-secondary mb-4">
+                    <p class="text-secondary mb-3">
                         A curated look at mobile applications, IoT telemetry clients, and collaborative systems I have engineered.
                     </p>
 
+                    <!-- Interactive Category Filter Bar -->
+                    <div class="project-filter-bar">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="iot">⚡ CleanTech & IoT</button>
+                        <button class="filter-btn" data-filter="fintech">💳 Fintech & Payments</button>
+                        <button class="filter-btn" data-filter="design">🎨 Branding & UI Systems</button>
+                    </div>
+
                     <!-- Project 1: SafiCharge -->
-                    <div class="project-card">
+                    <div class="project-card" data-category="iot">
                         <div class="project-badge-strip">
                             <span class="project-type-badge">CleanTech & IoT Mobile</span>
                             <span class="project-attribution-pill">
@@ -279,6 +321,33 @@
                         <p class="project-overview">
                             A production cross-platform mobile application engineered for electric vehicle drivers to discover charging stations, monitor live charge sessions, and process automated mobile billing transactions.
                         </p>
+
+                        <!-- Visual Telemetry HUD Widget -->
+                        <div class="project-visual-hud">
+                            <div class="hud-header">
+                                <span class="hud-title"><i class="fa fa-bolt text-warning"></i> Live Session Telemetry HUD</span>
+                                <span class="hud-status-badge"><i class="fa fa-circle"></i> OCPP 1.6 / 2.0.1 Connected</span>
+                            </div>
+                            <div class="hud-metrics-grid">
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Charging State (SoC)</div>
+                                    <div class="hud-metric-value text-success">78% Active</div>
+                                    <div class="hud-progress-bar">
+                                        <div class="hud-progress-fill" style="width: 78%;"></div>
+                                    </div>
+                                </div>
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Power Draw</div>
+                                    <div class="hud-metric-value">42.8 kW Rate</div>
+                                    <span class="text-muted small">350V / 122A</span>
+                                </div>
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Billing Stream</div>
+                                    <div class="hud-metric-value text-info">M-Pesa Daraja</div>
+                                    <span class="text-success small">Auto-Reconciled ✓</span>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="project-responsibilities">
                             <h5>My Architecture & Engineering Focus:</h5>
@@ -302,7 +371,7 @@
                     </div>
 
                     <!-- Project 2: SafariTap / BobPay -->
-                    <div class="project-card">
+                    <div class="project-card" data-category="fintech">
                         <div class="project-badge-strip">
                             <span class="project-type-badge">Fintech & Payments</span>
                             <span class="project-attribution-pill">
@@ -317,6 +386,31 @@
                         <p class="project-overview">
                             A high-security financial operations mobile platform empowering daily merchants to accept payments, monitor transaction streams, and manage digital wallets.
                         </p>
+
+                        <!-- Visual Security & Payment HUD Widget -->
+                        <div class="project-visual-hud">
+                            <div class="hud-header">
+                                <span class="hud-title"><i class="fa fa-credit-card text-danger"></i> Merchant Terminal Status</span>
+                                <span class="hud-status-badge text-info"><i class="fa fa-shield"></i> Biometric 2FA Enforced</span>
+                            </div>
+                            <div class="hud-metrics-grid">
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Authentication Layer</div>
+                                    <div class="hud-metric-value"><i class="fa fa-fingerprint"></i> Biometric Auth</div>
+                                    <span class="text-success small">Fingerprint & Face Lock</span>
+                                </div>
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Real-time Stream</div>
+                                    <div class="hud-metric-value text-warning">Pusher Beams</div>
+                                    <span class="text-muted small">Sub-Second Receipts</span>
+                                </div>
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Payment Rail</div>
+                                    <div class="hud-metric-value">Dynamic QR</div>
+                                    <span class="text-success small">Instant Paylinks</span>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="project-responsibilities">
                             <h5>My Architecture & Engineering Focus:</h5>
@@ -338,7 +432,7 @@
                     </div>
 
                     <!-- Project 3: Brand Identity & UI Design -->
-                    <div class="project-card">
+                    <div class="project-card" data-category="design">
                         <div class="project-badge-strip">
                             <span class="project-type-badge">Branding & UI Systems</span>
                             <span class="project-attribution-pill">
@@ -353,6 +447,31 @@
                         <p class="project-overview">
                             Directed visual identities, branding packages, and responsive digital interfaces for institutional and corporate clients, translating creative concepts into production-ready digital assets.
                         </p>
+
+                        <!-- Visual Design & Craft HUD Widget -->
+                        <div class="project-visual-hud">
+                            <div class="hud-header">
+                                <span class="hud-title"><i class="fa fa-cubes text-info"></i> Design Systems & Asset Suite</span>
+                                <span class="hud-status-badge text-success"><i class="fa fa-check"></i> Vector & WCAG Compliant</span>
+                            </div>
+                            <div class="hud-metrics-grid">
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Institutional Branding</div>
+                                    <div class="hud-metric-value">Heraldic Vectors</div>
+                                    <span class="text-muted small">School Flags & Emblems</span>
+                                </div>
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Corporate Web</div>
+                                    <div class="hud-metric-value">Center Circle Ltd</div>
+                                    <span class="text-success small">Responsive UX</span>
+                                </div>
+                                <div class="hud-metric-item">
+                                    <div class="hud-metric-label">Engineering Bridge</div>
+                                    <div class="hud-metric-value text-warning">Figma to Flutter</div>
+                                    <span class="text-muted small">Pixel-Perfect Precision</span>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="project-responsibilities">
                             <h5>Design & Engineering Highlights:</h5>
@@ -374,7 +493,7 @@
                     </div>
 
                     <!-- Project 4: Public Sector & Enterprise Systems -->
-                    <div class="project-card">
+                    <div class="project-card" data-category="all">
                         <div class="project-badge-strip">
                             <span class="project-type-badge">Enterprise & Civic Tech</span>
                             <span class="project-attribution-pill">
@@ -500,7 +619,7 @@
 
                     <div class="mt-4 pt-3 border-top border-secondary-subtle">
                         <h5 class="text-secondary text-uppercase fs-7 fw-bold mb-3">Published Articles:</h5>
-                        <div class="d-flex align-items-center justify-content-between p-3 rounded bg-dark border border-secondary-subtle">
+                        <div class="d-flex align-items-center justify-content-between p-3 rounded bg-dark border border-secondary-subtle flex-wrap gap-2">
                             <div>
                                 <h6 class="text-white mb-1">Getting Started in Tech: Essential Tools and Skills for Beginners</h6>
                                 <span class="text-secondary small">Published on Hashnode</span>
@@ -524,12 +643,12 @@
                     </p>
 
                     <div class="contact-grid">
-                        <a href="mailto:mutukudaniel79@gmail.com" class="contact-card-item">
+                        <a href="mailto:mutukudaniel79@gmail.com" class="contact-card-item" data-copy-email="mutukudaniel79@gmail.com">
                             <div class="contact-card-icon">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </div>
                             <div>
-                                <div class="contact-label">Email</div>
+                                <div class="contact-label">Email (Click to Copy)</div>
                                 <div class="contact-val">mutukudaniel79@gmail.com</div>
                             </div>
                         </a>
