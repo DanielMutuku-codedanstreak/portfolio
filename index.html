@@ -32,9 +32,9 @@
     </script>
 </head>
 <body>
-    <!-- Top Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top mb-4" data-bs-theme="dark">
-        <div class="container-fluid layout-container">
+    <!-- Top Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom" data-bs-theme="dark">
+        <div class="site-container d-flex align-items-center justify-content-between w-100">
             <a class="navbar-brand brand-title" href="./">
                 Daniel Mutuku<span class="brand-dot">.</span>
             </a>
@@ -54,56 +54,24 @@
         </div>
     </nav>
 
-    <!-- Main Container -->
-    <div class="layout-container">
-        <div class="row gx-lg-5">
-            <!-- Left Column: Bio, Navigation, and Links -->
-            <aside class="col-lg-5 hero-sidebar">
-                <div>
-                    <div class="status-indicator">
+    <!-- Main Centered Container -->
+    <div class="site-container">
+        <!-- Hero Header -->
+        <header class="hero-header">
+            <div class="hero-main-row">
+                <div class="hero-text-col">
+                    <div class="status-pill">
                         <span class="status-dot"></span> Available for engineering roles
-                    </div>
-
-                    <div class="profile-avatar-wrap">
-                        <img src="./images/me-7.jpeg" alt="Daniel Mutuku">
                     </div>
 
                     <h1 class="hero-name">Daniel Mutuku</h1>
                     <div class="hero-role">Software Engineer • Mobile & Flutter</div>
 
                     <p class="hero-tagline">
-                        I build cross-platform mobile applications with Flutter, focusing on clean architecture, reliable offline handling, and solid integrations with backend APIs and payment systems.
+                        I build cross-platform mobile applications with Flutter, focusing on clean architecture, reliable offline handling, and solid integrations with backend APIs, IoT hardware, and payment systems.
                     </p>
 
-                    <!-- In-Page Sidebar Navigation -->
-                    <nav class="sidebar-nav" aria-label="Section navigation">
-                        <a href="#about" class="nav-anchor active">
-                            <span class="indicator-line"></span>
-                            <span>About</span>
-                        </a>
-                        <a href="#experience" class="nav-anchor">
-                            <span class="indicator-line"></span>
-                            <span>Experience</span>
-                        </a>
-                        <a href="#projects" class="nav-anchor">
-                            <span class="indicator-line"></span>
-                            <span>Projects</span>
-                        </a>
-                        <a href="#skills" class="nav-anchor">
-                            <span class="indicator-line"></span>
-                            <span>Skills</span>
-                        </a>
-                        <a href="#education" class="nav-anchor">
-                            <span class="indicator-line"></span>
-                            <span>Education</span>
-                        </a>
-                        <a href="#contact" class="nav-anchor">
-                            <span class="indicator-line"></span>
-                            <span>Contact</span>
-                        </a>
-                    </nav>
-
-                    <div class="hero-cta-group">
+                    <div class="hero-actions">
                         <a href="./files/Daniel-Mutuku-CV.pdf" target="_blank" download="Daniel-Mutuku-CV.pdf" class="btn-primary-clean">
                             <i class="fa fa-download" aria-hidden="true"></i> Download CV
                         </a>
@@ -111,361 +79,367 @@
                             <i class="fa fa-envelope-o" aria-hidden="true"></i> Get in touch
                         </a>
                     </div>
+
+                    <div class="social-strip">
+                        <a href="https://github.com/DanielMutuku-codedanstreak" target="_blank" class="social-icon-link" title="GitHub">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/danielmutuku-codedanstreak/" target="_blank" class="social-icon-link" title="LinkedIn">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://hashnode.com/@danielmutuku" target="_blank" class="social-icon-link" title="Hashnode Articles">
+                            <i class="fa fa-rss" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:mutukudaniel79@gmail.com" class="social-icon-link" title="Email">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="tel:+254743350136" class="social-icon-link" title="Phone">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="social-strip">
-                    <a href="https://github.com/DanielMutuku-codedanstreak" target="_blank" class="social-icon-link" title="GitHub">
-                        <i class="fa fa-github" aria-hidden="true"></i>
+                <div class="hero-avatar-col">
+                    <div class="profile-avatar-wrap">
+                        <img src="./images/me-7.jpeg" alt="Daniel Mutuku">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Feed -->
+        <main class="content-sections">
+            <!-- Section 1: About Me -->
+            <section id="about" class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <p>
+                    I’m a software engineer based in Nairobi, Kenya. I hold a Bachelor of Science in Software Engineering from Murang'a University of Technology (Second Class Upper, GPA: 3.47). Over the past few years, my primary focus has been mobile development—specifically architecting cross-platform Flutter applications that interface with physical IoT hardware (like EV charging stations) and fintech payment systems.
+                </p>
+                <p>
+                    When building client applications, I pay close attention to real-world edge cases: spotty mobile networks, offline-first caching, predictable state management, and clear API boundaries with backend teammates.
+                </p>
+                <p>
+                    Before focusing full-time on software engineering, I spent considerable time doing graphic design and vector branding—designing school flags, emblems, and visual identities. That background gave me an appreciation for spacing, typography, and visual hierarchy that directly informs how I build clean, responsive user interfaces today.
+                </p>
+            </section>
+
+            <!-- Section 2: Experience -->
+            <section id="experience" class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                </div>
+
+                <div class="experience-list">
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">February 2025 – Present</div>
+                        <h3 class="exp-title">Software Engineer</h3>
+                        <div class="exp-company">Geviton Limited</div>
+                        <p class="exp-description">
+                            Lead mobile engineer developing <strong>SafiCharge</strong>, a cross-platform Flutter mobile application communicating with physical IoT electric vehicle chargers and processing automated M-Pesa billing transactions. Also collaborated on enterprise web development for land management and resolved corporate web accessibility bottlenecks.
+                        </p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">March 2026 – November 2026</div>
+                        <h3 class="exp-title">Software Engineer (Contract)</h3>
+                        <div class="exp-company">BobPlus Limited</div>
+                        <p class="exp-description">
+                            Engineered core mobile features for a secure fintech application designed to conduct and manage daily business transactions. Collaborated within an agile team to optimize transactional data flows and backend reliability.
+                        </p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">October 2022 – June 2023</div>
+                        <h3 class="exp-title">Frontend Web Developer (Contract)</h3>
+                        <div class="exp-company">MNC Limited / Wintec Technologies</div>
+                        <p class="exp-description">
+                            Built responsive frontend interfaces for an enterprise hiring and employment management portal. Translated recruitment workflows into intuitive web components and integrated backend APIs.
+                        </p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">May 2022 – August 2022</div>
+                        <h3 class="exp-title">ICT Attaché</h3>
+                        <div class="exp-company">Machakos County ICT Offices</div>
+                        <p class="exp-description">
+                            Migrated complex legacy records onto the newly launched Machakos County Government web portal with zero data loss. Performed post-migration system testing, web accessibility fixes, and digital literacy workshops for staff.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Selected Projects -->
+            <section id="projects" class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Projects</h2>
+                </div>
+
+                <!-- Project 1: SafiCharge -->
+                <div class="project-item">
+                    <div class="project-meta-row">
+                        <span class="project-role-tag">Mobile Application • CleanTech & IoT</span>
+                        <span class="project-period">Geviton Limited</span>
+                    </div>
+                    <h3 class="project-title">SafiCharge — EV Charging Mobile App</h3>
+                    <p class="project-narrative">
+                        A production cross-platform mobile application built for electric vehicle drivers in Kenya. It lets users find nearby charging stations, check live charger availability, monitor active charging sessions, and pay automatically via M-Pesa.
+                    </p>
+                    <ul class="project-bullet-list">
+                        <li>Built station discovery mapping with real-time availability filters using <code>flutter_map</code> and <code>latlong2</code>.</li>
+                        <li>Engineered the live charging session screen displaying real-time telemetry (State of Charge, power draw rate, and cost).</li>
+                        <li>Implemented the automated M-Pesa billing checkout flow with instant transaction callbacks.</li>
+                        <li>Integrated offline-first caching via <code>dio_cache_interceptor_file_store</code> to handle patchy network connectivity, with Sentry for error tracking.</li>
+                        <li>Collaborated with our backend engineer's Go microservices consuming OCPP (Open Charge Point Protocol) hardware sockets.</li>
+                    </ul>
+                    <div class="project-tech-tags">
+                        <span class="tech-pill">Flutter</span>
+                        <span class="tech-pill">Dart</span>
+                        <span class="tech-pill">fpdart</span>
+                        <span class="tech-pill">M-Pesa</span>
+                        <span class="tech-pill">Dio Cache</span>
+                        <span class="tech-pill">Sentry</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: SafariTap / BobPay -->
+                <div class="project-item">
+                    <div class="project-meta-row">
+                        <span class="project-role-tag">Fintech & Merchant Banking</span>
+                        <span class="project-period">BobPlus Limited</span>
+                    </div>
+                    <h3 class="project-title">SafariTap / BobPay — Merchant Application</h3>
+                    <p class="project-narrative">
+                        A financial operations mobile application designed for business merchants to accept daily payments, manage their digital wallets, and track transactional records.
+                    </p>
+                    <ul class="project-bullet-list">
+                        <li>Engineered biometric authentication (fingerprint and face verification via <code>local_auth</code>) and multi-channel 2FA (SMS & Email OTP).</li>
+                        <li>Built dynamic payment link generation and QR code creation for counter checkout.</li>
+                        <li>Implemented real-time transaction streaming and push notifications via Pusher Beams and WebSockets for immediate receipts.</li>
+                        <li>Synchronized mobile transaction state flows with backend payment engines to guarantee financial data consistency.</li>
+                    </ul>
+                    <div class="project-tech-tags">
+                        <span class="tech-pill">Flutter</span>
+                        <span class="tech-pill">local_auth</span>
+                        <span class="tech-pill">Pusher Beams</span>
+                        <span class="tech-pill">WebSockets</span>
+                        <span class="tech-pill">QR Systems</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Brand Identity & UI Design -->
+                <div class="project-item">
+                    <div class="project-meta-row">
+                        <span class="project-role-tag">Brand Identity & Digital Design</span>
+                        <span class="project-period">Freelance & Contract</span>
+                    </div>
+                    <h3 class="project-title">Brand Identity, Vector Graphics & UI Layouts</h3>
+                    <p class="project-narrative">
+                        Institutional branding, vector graphics, and web layouts developed for educational and corporate organizations.
+                    </p>
+                    <ul class="project-bullet-list">
+                        <li>Designed official heraldic emblems, vector logos, and school flags for Kathelwa, Lumbwa, and Kithokyo secondary schools.</li>
+                        <li>Designed and developed the corporate website for Center Circle Investments Limited.</li>
+                        <li>Built user journey flowcharts and architecture wireframes using Draw.io.</li>
+                        <li>Today, this visual background enables me to work comfortably in Figma, design systems, and wireframing, bridging the gap between design concepts and production Flutter code.</li>
+                    </ul>
+                    <div class="project-tech-tags">
+                        <span class="tech-pill">Figma</span>
+                        <span class="tech-pill">CorelDraw</span>
+                        <span class="tech-pill">Draw.io</span>
+                        <span class="tech-pill">Vector Design</span>
+                        <span class="tech-pill">Brand Identity</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Technical Skills -->
+            <section id="skills" class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div>
+                        <div class="skill-category-title">Mobile Engineering</div>
+                        <div class="skill-list-wrap">
+                            <span class="skill-tag-clean highlight">Flutter</span>
+                            <span class="skill-tag-clean highlight">Dart</span>
+                            <span class="skill-tag-clean">BLoC / Provider</span>
+                            <span class="skill-tag-clean">Cross-Platform (iOS/Android)</span>
+                            <span class="skill-tag-clean">Biometric Auth (local_auth)</span>
+                            <span class="skill-tag-clean">Dio Offline Caching</span>
+                            <span class="skill-tag-clean">Sentry Telemetry</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-category-title">APIs & Integrations</div>
+                        <div class="skill-list-wrap">
+                            <span class="skill-tag-clean highlight">RESTful APIs</span>
+                            <span class="skill-tag-clean highlight">WebSockets / Pusher</span>
+                            <span class="skill-tag-clean">M-Pesa Integration</span>
+                            <span class="skill-tag-clean">IoT Protocols (OCPP Telemetry)</span>
+                            <span class="skill-tag-clean">Mapbox / flutter_map</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-category-title">Web & Backend</div>
+                        <div class="skill-list-wrap">
+                            <span class="skill-tag-clean">Python</span>
+                            <span class="skill-tag-clean">PHP</span>
+                            <span class="skill-tag-clean">JavaScript (ES6+)</span>
+                            <span class="skill-tag-clean">React.js</span>
+                            <span class="skill-tag-clean">HTML5 / CSS3</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-category-title">Tools & Databases</div>
+                        <div class="skill-list-wrap">
+                            <span class="skill-tag-clean">Git</span>
+                            <span class="skill-tag-clean">SQLite</span>
+                            <span class="skill-tag-clean">MySQL</span>
+                            <span class="skill-tag-clean">Docker Basics</span>
+                            <span class="skill-tag-clean">Postman</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skill-category-title">Design & UX</div>
+                        <div class="skill-list-wrap">
+                            <span class="skill-tag-clean">Figma</span>
+                            <span class="skill-tag-clean">Draw.io</span>
+                            <span class="skill-tag-clean">CorelDraw</span>
+                            <span class="skill-tag-clean">UI Wireframing</span>
+                            <span class="skill-tag-clean">Web Accessibility (WCAG)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Education & Certifications -->
+            <section id="education" class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">Education & Certifications</h2>
+                </div>
+
+                <div class="experience-list">
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">September 2019 – April 2023</div>
+                        <h3 class="exp-title">BSc in Software Engineering</h3>
+                        <div class="exp-company">Murang'a University of Technology</div>
+                        <p class="exp-description">
+                            Graduated with Second Class Upper Division (GPA: 3.47). Coursework in software design patterns, distributed algorithms, data structures, and database systems.
+                        </p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">September 2023 – March 2024</div>
+                        <h3 class="exp-title">Certified Full-Stack Developer</h3>
+                        <div class="exp-company">Moringa School — Nairobi, Kenya</div>
+                        <p class="exp-description">
+                            Intensive certificate in full-stack software development, modern application architecture, and team collaboration.
+                        </p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">May 2021 – June 2022</div>
+                        <h3 class="exp-title">Certified Backend Developer</h3>
+                        <div class="exp-company">ALX Africa — Nairobi, Kenya</div>
+                        <p class="exp-description">
+                            Systems programming, backend architectures, command-line tooling, and algorithmic problem solving.
+                        </p>
+                    </div>
+
+                    <div class="exp-item">
+                        <div class="exp-dot"></div>
+                        <div class="exp-dates">January 2019 – April 2019</div>
+                        <h3 class="exp-title">Certified Computer Specialist</h3>
+                        <div class="exp-company">Machakos Institute of Technology</div>
+                        <p class="exp-description">
+                            ICDL Certificate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-3 border-top border-secondary-subtle">
+                    <h4 class="text-white fs-6 fw-bold mb-2">Community & Mentorship</h4>
+                    <p class="small text-secondary mb-2">
+                        <strong>Peer Technical Mentor:</strong> Mentoring junior software engineering peers through code reviews, debugging clinics, and software architecture discussions.
+                    </p>
+                    <p class="small text-secondary mb-0">
+                        <strong>Community Youth Leader:</strong> Organizing local youth initiatives around digital literacy and community collaboration.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 6: Contact -->
+            <section id="contact" class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                </div>
+                <p>
+                    Whether you want to discuss a mobile application project, explore full-time software engineering roles, or simply connect, feel free to reach out.
+                </p>
+
+                <div class="contact-clean-grid mt-4">
+                    <a href="mailto:mutukudaniel79@gmail.com" class="contact-box" data-copy-email="mutukudaniel79@gmail.com">
+                        <div class="contact-box-icon">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <div class="contact-box-label">Email (Click to copy)</div>
+                            <div class="contact-box-val">mutukudaniel79@gmail.com</div>
+                        </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/danielmutuku-codedanstreak/" target="_blank" class="social-icon-link" title="LinkedIn">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+
+                    <a href="tel:+254743350136" class="contact-box">
+                        <div class="contact-box-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <div class="contact-box-label">Phone / WhatsApp</div>
+                            <div class="contact-box-val">+254743350136</div>
+                        </div>
                     </a>
-                    <a href="https://hashnode.com/@danielmutuku" target="_blank" class="social-icon-link" title="Hashnode Articles">
-                        <i class="fa fa-rss" aria-hidden="true"></i>
-                    </a>
-                    <a href="mailto:mutukudaniel79@gmail.com" class="social-icon-link" title="Email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                    <a href="tel:+254743350136" class="social-icon-link" title="Phone">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
+
+                    <div class="contact-box">
+                        <div class="contact-box-icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <div class="contact-box-label">Location</div>
+                            <div class="contact-box-val">Nairobi, Kenya</div>
+                        </div>
+                    </div>
+
+                    <a href="./files/Daniel-Mutuku-CV.pdf" target="_blank" download="Daniel-Mutuku-CV.pdf" class="contact-box">
+                        <div class="contact-box-icon">
+                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        </div>
+                        <div>
+                            <div class="contact-box-label">Resume / CV</div>
+                            <div class="contact-box-val">Download PDF</div>
+                        </div>
                     </a>
                 </div>
-            </aside>
-
-            <!-- Right Column: Content Feed -->
-            <main class="col-lg-7 content-feed">
-                <!-- Section 1: About Me -->
-                <section id="about" class="section-block">
-                    <div class="section-header">
-                        <h2 class="section-title">About Me</h2>
-                    </div>
-                    <p>
-                        I’m a software engineer based in Nairobi, Kenya. I hold a Bachelor of Science in Software Engineering from Murang'a University of Technology (Second Class Upper, GPA: 3.47). Over the past few years, my primary focus has been mobile development—specifically architecting cross-platform Flutter applications that interface with physical IoT hardware (like EV charging stations) and fintech payment systems.
-                    </p>
-                    <p>
-                        When building client applications, I pay close attention to real-world edge cases: spotty mobile networks, offline-first caching, predictable state management, and clear API boundaries with backend teammates.
-                    </p>
-                    <p>
-                        Before focusing full-time on software engineering, I spent considerable time doing graphic design and vector branding—designing school flags, emblems, and visual identities. That background gave me an appreciation for spacing, typography, and visual hierarchy that directly informs how I build clean, responsive user interfaces today.
-                    </p>
-                </section>
-
-                <!-- Section 2: Experience -->
-                <section id="experience" class="section-block">
-                    <div class="section-header">
-                        <h2 class="section-title">Experience</h2>
-                    </div>
-
-                    <div class="experience-list">
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">February 2025 – Present</div>
-                            <h3 class="exp-title">Software Engineer</h3>
-                            <div class="exp-company">Geviton Limited</div>
-                            <p class="exp-description">
-                                Lead mobile engineer developing <strong>SafiCharge</strong>, a cross-platform Flutter mobile application communicating with physical IoT electric vehicle chargers and processing automated M-Pesa billing transactions. Also collaborated on enterprise web development for land management and resolved corporate web accessibility bottlenecks.
-                            </p>
-                        </div>
-
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">March 2026 – November 2026</div>
-                            <h3 class="exp-title">Software Engineer (Contract)</h3>
-                            <div class="exp-company">BobPlus Limited</div>
-                            <p class="exp-description">
-                                Engineered core mobile features for a secure fintech application designed to conduct and manage daily business transactions. Collaborated within an agile team to optimize transactional data flows and backend reliability.
-                            </p>
-                        </div>
-
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">October 2022 – June 2023</div>
-                            <h3 class="exp-title">Frontend Web Developer (Contract)</h3>
-                            <div class="exp-company">MNC Limited / Wintec Technologies</div>
-                            <p class="exp-description">
-                                Built responsive frontend interfaces for an enterprise hiring and employment management portal. Translated recruitment workflows into intuitive web components and integrated backend APIs.
-                            </p>
-                        </div>
-
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">May 2022 – August 2022</div>
-                            <h3 class="exp-title">ICT Attaché</h3>
-                            <div class="exp-company">Machakos County ICT Offices</div>
-                            <p class="exp-description">
-                                Migrated complex legacy records onto the newly launched Machakos County Government web portal with zero data loss. Performed post-migration system testing, web accessibility fixes, and digital literacy workshops for staff.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 3: Selected Projects -->
-                <section id="projects" class="section-block">
-                    <div class="section-header">
-                        <h2 class="section-title">Selected Projects</h2>
-                    </div>
-
-                    <!-- Project 1: SafiCharge -->
-                    <div class="project-item">
-                        <div class="project-meta-row">
-                            <span class="project-role-tag">Mobile Application • CleanTech & IoT</span>
-                            <span class="project-period">Geviton Limited</span>
-                        </div>
-                        <h3 class="project-title">SafiCharge — EV Charging Mobile App</h3>
-                        <p class="project-narrative">
-                            A production cross-platform mobile application built for electric vehicle drivers in Kenya. It lets users find nearby charging stations, check live charger availability, monitor active charging sessions, and pay automatically via M-Pesa.
-                        </p>
-                        <ul class="project-bullet-list">
-                            <li>Built station discovery mapping with real-time availability filters using <code>flutter_map</code> and <code>latlong2</code>.</li>
-                            <li>Engineered the live charging session screen displaying real-time telemetry (State of Charge, power draw rate, and cost).</li>
-                            <li>Implemented the automated M-Pesa billing checkout flow with instant transaction callbacks.</li>
-                            <li>Integrated offline-first caching via <code>dio_cache_interceptor_file_store</code> to handle patchy network connectivity, with Sentry for error tracking.</li>
-                            <li>Collaborated with our backend engineer's Go microservices consuming OCPP (Open Charge Point Protocol) hardware sockets.</li>
-                        </ul>
-                        <div class="project-tech-tags">
-                            <span class="tech-pill">Flutter</span>
-                            <span class="tech-pill">Dart</span>
-                            <span class="tech-pill">fpdart</span>
-                            <span class="tech-pill">M-Pesa</span>
-                            <span class="tech-pill">Dio Cache</span>
-                            <span class="tech-pill">Sentry</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 2: SafariTap / BobPay -->
-                    <div class="project-item">
-                        <div class="project-meta-row">
-                            <span class="project-role-tag">Fintech & Merchant Banking</span>
-                            <span class="project-period">BobPlus Limited</span>
-                        </div>
-                        <h3 class="project-title">SafariTap / BobPay — Merchant Application</h3>
-                        <p class="project-narrative">
-                            A financial operations mobile application designed for business merchants to accept daily payments, manage their digital wallets, and track transactional records.
-                        </p>
-                        <ul class="project-bullet-list">
-                            <li>Engineered biometric authentication (fingerprint and face verification via <code>local_auth</code>) and multi-channel 2FA (SMS & Email OTP).</li>
-                            <li>Built dynamic payment link generation and QR code creation for counter checkout.</li>
-                            <li>Implemented real-time transaction streaming and push notifications via Pusher Beams and WebSockets for immediate receipts.</li>
-                            <li>Synchronized mobile transaction state flows with backend payment engines to guarantee financial data consistency.</li>
-                        </ul>
-                        <div class="project-tech-tags">
-                            <span class="tech-pill">Flutter</span>
-                            <span class="tech-pill">local_auth</span>
-                            <span class="tech-pill">Pusher Beams</span>
-                            <span class="tech-pill">WebSockets</span>
-                            <span class="tech-pill">QR Systems</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: Brand Identity & UI Design -->
-                    <div class="project-item">
-                        <div class="project-meta-row">
-                            <span class="project-role-tag">Brand Identity & Digital Design</span>
-                            <span class="project-period">Freelance & Contract</span>
-                        </div>
-                        <h3 class="project-title">Brand Identity, Vector Graphics & UI Layouts</h3>
-                        <p class="project-narrative">
-                            Institutional branding, vector graphics, and web layouts developed for educational and corporate organizations.
-                        </p>
-                        <ul class="project-bullet-list">
-                            <li>Designed official heraldic emblems, vector logos, and school flags for Kathelwa, Lumbwa, and Kithokyo secondary schools.</li>
-                            <li>Designed and developed the corporate website for Center Circle Investments Limited.</li>
-                            <li>Built user journey flowcharts and architecture wireframes using Draw.io.</li>
-                            <li>Today, this visual background enables me to work comfortably in Figma, design systems, and wireframing, bridging the gap between design concepts and production Flutter code.</li>
-                        </ul>
-                        <div class="project-tech-tags">
-                            <span class="tech-pill">Figma</span>
-                            <span class="tech-pill">CorelDraw</span>
-                            <span class="tech-pill">Draw.io</span>
-                            <span class="tech-pill">Vector Design</span>
-                            <span class="tech-pill">Brand Identity</span>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 4: Technical Skills -->
-                <section id="skills" class="section-block">
-                    <div class="section-header">
-                        <h2 class="section-title">Technical Skills</h2>
-                    </div>
-
-                    <div class="skills-grid">
-                        <div>
-                            <div class="skill-category-title">Mobile Engineering</div>
-                            <div class="skill-list-wrap">
-                                <span class="skill-tag-clean highlight">Flutter</span>
-                                <span class="skill-tag-clean highlight">Dart</span>
-                                <span class="skill-tag-clean">BLoC / Provider</span>
-                                <span class="skill-tag-clean">Cross-Platform (iOS/Android)</span>
-                                <span class="skill-tag-clean">Biometric Auth (local_auth)</span>
-                                <span class="skill-tag-clean">Dio Offline Caching</span>
-                                <span class="skill-tag-clean">Sentry Telemetry</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="skill-category-title">APIs & Integrations</div>
-                            <div class="skill-list-wrap">
-                                <span class="skill-tag-clean highlight">RESTful APIs</span>
-                                <span class="skill-tag-clean highlight">WebSockets / Pusher</span>
-                                <span class="skill-tag-clean">M-Pesa Integration</span>
-                                <span class="skill-tag-clean">IoT Protocols (OCPP Telemetry)</span>
-                                <span class="skill-tag-clean">Mapbox / flutter_map</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="skill-category-title">Web & Backend</div>
-                            <div class="skill-list-wrap">
-                                <span class="skill-tag-clean">Python</span>
-                                <span class="skill-tag-clean">PHP</span>
-                                <span class="skill-tag-clean">JavaScript (ES6+)</span>
-                                <span class="skill-tag-clean">React.js</span>
-                                <span class="skill-tag-clean">HTML5 / CSS3</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="skill-category-title">Tools & Databases</div>
-                            <div class="skill-list-wrap">
-                                <span class="skill-tag-clean">Git</span>
-                                <span class="skill-tag-clean">SQLite</span>
-                                <span class="skill-tag-clean">MySQL</span>
-                                <span class="skill-tag-clean">Docker Basics</span>
-                                <span class="skill-tag-clean">Postman</span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="skill-category-title">Design & UX</div>
-                            <div class="skill-list-wrap">
-                                <span class="skill-tag-clean">Figma</span>
-                                <span class="skill-tag-clean">Draw.io</span>
-                                <span class="skill-tag-clean">CorelDraw</span>
-                                <span class="skill-tag-clean">UI Wireframing</span>
-                                <span class="skill-tag-clean">Web Accessibility (WCAG)</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Section 5: Education & Certifications -->
-                <section id="education" class="section-block">
-                    <div class="section-header">
-                        <h2 class="section-title">Education & Certifications</h2>
-                    </div>
-
-                    <div class="experience-list">
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">September 2019 – April 2023</div>
-                            <h3 class="exp-title">BSc in Software Engineering</h3>
-                            <div class="exp-company">Murang'a University of Technology</div>
-                            <p class="exp-description">
-                                Graduated with Second Class Upper Division (GPA: 3.47). Coursework in software design patterns, distributed algorithms, data structures, and database systems.
-                            </p>
-                        </div>
-
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">September 2023 – March 2024</div>
-                            <h3 class="exp-title">Certified Full-Stack Developer</h3>
-                            <div class="exp-company">Moringa School — Nairobi, Kenya</div>
-                            <p class="exp-description">
-                                Intensive certificate in full-stack software development, modern application architecture, and team collaboration.
-                            </p>
-                        </div>
-
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">May 2021 – June 2022</div>
-                            <h3 class="exp-title">Certified Backend Developer</h3>
-                            <div class="exp-company">ALX Africa — Nairobi, Kenya</div>
-                            <p class="exp-description">
-                                Systems programming, backend architectures, command-line tooling, and algorithmic problem solving.
-                            </p>
-                        </div>
-
-                        <div class="exp-item">
-                            <div class="exp-dot"></div>
-                            <div class="exp-dates">January 2019 – April 2019</div>
-                            <h3 class="exp-title">Certified Computer Specialist</h3>
-                            <div class="exp-company">Machakos Institute of Technology</div>
-                            <p class="exp-description">
-                                ICDL Certificate.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 pt-3 border-top border-secondary-subtle">
-                        <h4 class="text-white fs-6 fw-bold mb-2">Community & Mentorship</h4>
-                        <p class="small text-secondary mb-2">
-                            <strong>Peer Technical Mentor:</strong> Mentoring junior software engineering peers through code reviews, debugging clinics, and software architecture discussions.
-                        </p>
-                        <p class="small text-secondary mb-0">
-                            <strong>Community Youth Leader:</strong> Organizing local youth initiatives around digital literacy and community collaboration.
-                        </p>
-                    </div>
-                </section>
-
-                <!-- Section 6: Contact -->
-                <section id="contact" class="section-block">
-                    <div class="section-header">
-                        <h2 class="section-title">Get in Touch</h2>
-                    </div>
-                    <p>
-                        Whether you want to discuss a mobile application project, explore full-time software engineering roles, or simply connect, feel free to reach out.
-                    </p>
-
-                    <div class="contact-clean-grid mt-3">
-                        <a href="mailto:mutukudaniel79@gmail.com" class="contact-box" data-copy-email="mutukudaniel79@gmail.com">
-                            <div class="contact-box-icon">
-                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <div class="contact-box-label">Email (Click to copy)</div>
-                                <div class="contact-box-val">mutukudaniel79@gmail.com</div>
-                            </div>
-                        </a>
-
-                        <a href="tel:+254743350136" class="contact-box">
-                            <div class="contact-box-icon">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <div class="contact-box-label">Phone / WhatsApp</div>
-                                <div class="contact-box-val">+254743350136</div>
-                            </div>
-                        </a>
-
-                        <div class="contact-box">
-                            <div class="contact-box-icon">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <div class="contact-box-label">Location</div>
-                                <div class="contact-box-val">Nairobi, Kenya</div>
-                            </div>
-                        </div>
-
-                        <a href="./files/Daniel-Mutuku-CV.pdf" target="_blank" download="Daniel-Mutuku-CV.pdf" class="contact-box">
-                            <div class="contact-box-icon">
-                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                            </div>
-                            <div>
-                                <div class="contact-box-label">Resume / CV</div>
-                                <div class="contact-box-val">Download PDF</div>
-                            </div>
-                        </a>
-                    </div>
-                </section>
-            </main>
-        </div>
+            </section>
+        </main>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="layout-container">
+        <div class="site-container">
             <p class="mb-0 text-muted">
                 Daniel Mutuku &copy; 2026. Built with semantic HTML, clean CSS & vanilla JavaScript.
             </p>
