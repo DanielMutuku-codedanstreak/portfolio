@@ -4,7 +4,6 @@
    No gimmicky animations, no fake futuristic widgets, no visual noise.
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   --bg-page: #0c0e12;
@@ -149,6 +148,9 @@ p:last-child {
   display: flex;
   flex-direction: column;
   padding-right: 2rem;
+  max-height: calc(100vh - 6.5rem);
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .content-feed {
@@ -218,7 +220,7 @@ p:last-child {
   color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.65;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 /* Sidebar Section Links */
@@ -325,15 +327,12 @@ p:last-child {
 
 /* Content Sections & Cards */
 .section-block {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-default);
-  border-radius: var(--radius-lg);
-  padding: 2.25rem;
-  transition: border-color var(--transition);
+  padding: 0 0 2.5rem;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.section-block:hover {
-  border-color: var(--border-hover);
+.section-block:last-child {
+  border-bottom: 0;
 }
 
 .section-header {
@@ -590,7 +589,7 @@ footer {
   border-top: 1px solid var(--border-subtle);
   padding: 2.5rem 0;
   text-align: center;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-size: 0.82rem;
 }
 
@@ -612,6 +611,6 @@ footer {
   }
   
   .section-block {
-    padding: 1.5rem;
+    padding-bottom: 1.75rem;
   }
 }
